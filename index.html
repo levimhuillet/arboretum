@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Arboretum Webpage | Welcome</title>
+    <title>Arboretum | Home</title>
   </head>
 
   <body>
@@ -15,19 +15,59 @@
       <header>
         <div class="container">
           <div class="brand">
-            <h1>Brand</h1>
+            <h1>Arboretum</h1>
           </div>
           <nav>
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Other</li>
+              <li class="current"><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./other.html">Other</a></li>
             </ul>
           </nav>
         </div>
       </header>
 
-      <div class="showcase"></div>
+      <div id="showcase">
+        <h2>
+          Arboretum
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non facilis, nam atque excepturi repellendus nulla consequatur nisi, minus assumenda cumque neque et deserunt. Error amet accusantium vero ab earum velit
+        </p>
+      </div>
+
+      <div id="newsletter">
+        <form>
+          <input type="email" placeHolder="Enter Email"></input>
+          <button type="submit" class="news-button">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Version 1: Fade, but text below -->
+      <div id="trees">
+        <img src="./images/oak.jpg">
+        <img src="./images/pine.jpg">
+        <img src="./images/sycamore.jpg">
+      </div>
+
+      <div id="labels">
+        <p>Oak</p>
+        <p>Pine</p>
+        <p>Sycamore</p>
+      </div>
+
+      <!-- Version 2 - Text, no fade
+      <div id="trees">
+        <div id="contain-reveal-1" class="hidden">
+          <p>Oak</p>
+        </div>
+        <div id="contain-reveal-2" class="hidden">
+          <p>Pine</p>
+        </div>
+        <div id="contain-reveal-3" class="hidden">
+          <p>Sycamore</p>
+        </div>
+-->
 
     </div>
 
@@ -39,7 +79,9 @@
       <p>Arboretum, Copyright &copy; 2020</p>
     </footer>
 
-
+    <footer id="git">
+      <p><a href="https://github.com/northlandruins/arboretum">https://github.com/northlandruins/arboretum</p></a>
+    </footer>
 
 
   </body>

@@ -2,12 +2,14 @@
 body {
   padding: 0;
   margin: 0;
+  padding-bottom: 100px;
 }
 
 /* Website Frame*/
 .frame {
   margin: auto;
   max-width: 90%;
+  background-color: #b4b4b4b4;
 }
 
 /* Header */
@@ -15,10 +17,12 @@ body {
   padding: 0;
 }
 
-.brand h1 {
+header .brand h1 {
   float: left;
-  padding: 15px 0 0 20px;
+  padding: 15px 0 0 40px;
   margin: auto;
+  color: #3FD471;
+  font-weight: normal;
 }
 
 header {
@@ -32,23 +36,264 @@ header {
 header nav {
   float: right;
   padding-top: 8px;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 header li {
   display: inline;
-  padding: 0 20px 0 20px;
+}
+
+header a {
+  margin: 0 20px 0 20px;
   font-size: 18px;
+  color: #3FD471;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #4DFF89;
+  border-bottom: black 2px solid;
+}
+
+header .current a {
+  margin: 0;
+  padding: 0 20px 0 20px;
+  border-bottom: black 2px solid;
+}
+
+header .current a:hover {
+  color: #000000;
+  border-bottom: black 2px solid;
 }
 
 /* Showcase */
-.showcase {
+#showcase {
   background: url("../images/near-trunk3.jpg") no-repeat;
   background-position: right bottom;
   min-height: 400px;
   max-width: 100%;
+  border-bottom: black 2px solid;
 }
 
+#showcase h2 {
+  margin-top: 0;
+  padding-top: 120px;
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+
+#showcase p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 35px;
+  font-size: 20px;
+  color: white;
+  margin: auto;
+  text-align: justify;
+  max-width: 80%;
+}
+
+/* Newsletter */
+#newsletter {
+  min-height: 40px;
+  text-align: right;
+  padding-top: 12px;
+  padding-right: 20px;
+  background: url("../images/wood3.jpg") no-repeat;
+  background-size: cover;
+}
+
+.news-button {
+  padding: 5px 10px 5px 10px;
+  border: 0;
+  background-color: #2A8C4B;
+  color: white;
+}
+
+input[type="email"] {
+  padding: 3px;
+  margin: 0 5px 0 10px;
+  background-color: #b2b2b2b2;
+  border: #b4b4b4b4 2px solid;
+}
+
+/* About */
+.article-container {
+  margin: 10px 10px 0 10px;
+  padding: 5px 30px 40px 30px;
+  min-height: 300px;
+  overflow: hidden;
+}
+
+article#main-column {
+  float: left;
+  width: 60%;
+  text-align: justify;
+}
+
+/*Newsletter Sidebar*/
+aside#newsletter-side {
+  float: right;
+  width: 30%;
+  margin-right: 20px;
+  margin-top: 40px;
+  background-color: #fcfcfcfc;
+  border-radius: 5%;
+}
+
+#newsletter-side h2 {
+  text-align: center;
+  color: #3FD471;
+  font-weight: normal;
+  padding: 5px;
+  margin: 15px;
+  background: url("../images/wood3.jpg") no-repeat;
+  background-size: cover;
+}
+
+#newsletter-side p {
+  padding: 5px 25px 5px 25px;
+  text-align: justify;
+}
+
+.side {
+  min-height: 60px;
+  background: url("../images/wood3.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+  margin: 15px;
+}
+
+.side .news-button {
+  display: block;
+  margin: auto;
+  width: 95%;
+  padding: 5px 10px 5px 10px;
+  border: 0;
+  background-color: #2A8C4B;
+  color: white;
+}
+
+.side input[type="email"] {
+  width: 80%;
+  padding: 3px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  background-color: #b2b2b2b2;
+  border: #b4b4b4b4 2px solid;
+}
+
+/* Other */
+.other-h2 {
+  text-align: center;
+}
+
+/* Trees and Labels */
+/*Version 1 - No Text*/
+#trees {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 15px 0 0 0;
+}
+
+#trees img {
+  width: 30%;
+  padding: 0;
+  margin: 0 15px 0 15px;
+  border-radius: 10%;
+  transition: 1s ease;
+  -webkit-filter: brightness(50%);
+}
+
+#trees img:hover {
+  -webkit-filter: brightness(100%);
+  transition: 1s ease;
+}
+
+#labels {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 10px 0 10px 0;
+}
+
+#labels p {
+  color: #ffffff;
+  font-size: 1.5em;
+  width: 30%;
+  padding: 0;
+  margin: 0 0 0 0;
+  text-align: center;
+}
+
+/* Version 2 - Text, no fade
+#trees {
+  min-height: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #000000;
+  padding: 10px 0 10px 0;
+}
+
+#contain-reveal-1 {
+  width: 30%;
+  background-image: url("../images/oak.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+#contain-reveal-2 {
+  width: 30%;
+  background-image: url("../images/pine.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+#contain-reveal-3 {
+  width: 30%;
+  background-image: url("../images/sycamore.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.hidden p {
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  top: 35px;
+  left: 0px;
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+#trees #contain-reveal-1:hover p {
+  visibility: visible;
+  color: white;
+}
+
+#trees #contain-reveal-2:hover p {
+  visibility: visible;
+  color: white;
+}
+
+#trees #contain-reveal-3:hover p {
+  visibility: visible;
+  color: white;
+}
+*/
 /* Return to Landing Page Button */
 .return {
   position: fixed;
@@ -78,30 +323,94 @@ header li {
   text-decoration: none;
 }
 
-/*Footer*/
+/* Footer */
 footer {
   background-color: #4DFF89;
+  background-color: #2A8C4B;
+  background-color: #2E9952;
   min-height: 50px;
 }
 
 footer p {
+  margin-top: 0;
   font-style: italic;
   padding-top: 15px;
   text-align: center;
 }
 
+/* Github Footer */
+footer#git {
+  background-color: #555;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 8px;
+  font-size: small;
+  font-family: monospace;
+}
+
+footer#git p {
+  padding-top: 20px;
+  font-style: normal;
+}
+
+footer#git a {
+  text-decoration: none;
+  color: white;
+}
+
+footer#git a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 /* Media Queries*/
+@media (min-width: 1500px) {
+  #showcase {
+    background-position: center bottom;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 900px) {
+  aside#newsletter-side p {
+    text-align: center;
+  }
+}
+
 @media (max-width: 780px) {
-  .showcase {
+  #showcase {
     background: url("../images/near-trunk2.jpg") no-repeat;
     background-position: center;
     background-size: cover;
   }
 }
 
-@media (min-width: 1500px) {
-  .showcase {
-    background-position: center bottom;
-    background-size: cover;
+@media (max-width: 650px) {
+  header .brand h1 {
+    float: none;
+    text-align: center;
+  }
+
+  header nav {
+    float: none;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+
+  article#main-column {
+    width: 80%;
+    float: none;
+    margin: auto;
+  }
+
+  aside#newsletter-side {
+    width: 100%;
+    float: none;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 0 10px 0;
   }
 }
