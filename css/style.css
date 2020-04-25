@@ -423,6 +423,10 @@ footer#git a:hover {
   #trees img {
     margin: 0 5px 0 5px;
   }
+
+  #labels p {
+    font-size: 1.3em;
+  }
 }
 
 @media (max-width: 500px) {
@@ -437,5 +441,9 @@ footer#git a:hover {
 
   #trees img {
     margin: 1px;
+  }
+
+  #labels p {
+    font-size: 1em;
   }
 }
