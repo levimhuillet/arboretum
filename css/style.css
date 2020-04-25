@@ -392,6 +392,8 @@ footer#git a:hover {
   header .brand h1 {
     float: none;
     text-align: center;
+    padding-top: 15px;
+    margin: auto;
   }
 
   header nav {
@@ -412,5 +414,28 @@ footer#git a:hover {
     margin: auto;
     margin-top: 40px;
     padding: 10px 0 10px 0;
+  }
+
+  #showcase p {
+    font-size: 17px;
+  }
+
+  #trees img {
+    margin: 0 5px 0 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  header a {
+    font-size: 15px;
+    margin: 0 10px 0 10px;
+  }
+
+  #showcase p {
+    font-size: 15px;
+  }
+
+  #trees img {
+    margin: 1px;
   }
 }
